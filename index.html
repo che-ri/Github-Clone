@@ -41,34 +41,38 @@
 
 <body>
     <div class="body__container">
-        <img srcset="https://github.githubassets.com/images/modules/site/home/globe-700.jpg 700w,
-                        https://github.githubassets.com/images/modules/site/home/globe.jpg 1400w"
-            sizes="(max-width: 700px) 70vw, 700px"
-            src="https://github.githubassets.com/images/modules/site/home/globe.jpg"
-            alt="Planet earth with visualization of GitHub activity crossing the globe"
-            class="width-full js-globe-fallback-image" loading="lazy">
-
-            <!-- header -->
+        <!-- header -->
         <header class="section">
-            <div class="inner">
-            <div class="menu-group">
-                <div class="logo"><a href="">GitHub</a></div>
-                <ul class="main-menu">
-                    <li><a href="">Why GitHub?</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">Enterprise</a></li>
-                    <li><a href="">Explore</a></li>
-                    <li><a href="">MarketPlace</a></li>
-                    <li><a href="">Pricing</a></li>
-                </ol>
+            <div class="inner clearfix">
+                <div class="menu-group float--left">
+                    <div class="logo"><a href="">GitHub</a></div>
+                    <ul class="main-menu">
+                        <li><a href="">Why GitHub?</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Enterprise</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">MarketPlace</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="sign-group float--right">
+                    <div class="btn-group">
+                        <a href="#" class="btn sign-in">Sign in</a>
+                        <a href="#" class="btn btn--primary sign-up">Sign up</a>
+                    </div>
+                    <form action="" id="search-form" method="POST">
+                        <input id="search" class="input--text" type="text" placeholder="Search GitHub">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <ul class="sub-menu">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="header__column"></div>
-        </div>
         </header>
     </div>
-
-    <input type="text" class="input--text" placeholder="Search Github" />
-
 </body>
 
 </html>
