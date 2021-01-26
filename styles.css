@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import "reset.css";
 
+
 /* COMMON */
 .body__container {
   font-family: 'Lato', sans-serif;
@@ -451,7 +452,7 @@ float를 사용할땐 부모요소에 clearfix를 사용해야된다는 점! 꼭
 
 /* pricing card */
 .section--pricing{
-  background:linear-gradient(#f5f5f5,#fff);
+  background:linear-gradient(#f5f5f5,#ffff);
 
 }
 .section--pricing .inner{
@@ -481,6 +482,47 @@ float를 사용할땐 부모요소에 clearfix를 사용해야된다는 점! 꼭
   border-left: 1px solid #e5e5e5
 }
 
+/* footer */
+footer{
+}
+
+footer .inner{
+  padding: 50px 0;
+  border-top: 1px solid #eee;
+}
+
+footer .site-links{
+  display:flex;
+}
 
 
 
+footer .site-links li{
+  font-size:12px;
+  margin-right: 10px;
+  color: #767676;
+}
+
+footer .site-links li a{
+  color:#4078c0;
+}
+
+footer .site-links li a:hover{
+  text-decoration: underline;
+}
+
+footer .logo{
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+}
+
+footer .logo:hover svg{
+  fill:#4078c0;
+}
+/* svg는 fill을 통하여 색상을 변화시킬 수 있다. */
