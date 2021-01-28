@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import "reset.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 /* COMMON */
 .body__container {
@@ -137,7 +136,7 @@ header {
 }
 
 header .inner {
-  /* max-width: 980px; */
+  max-width: 980px;
   height: 78px;
 
 }
@@ -153,7 +152,7 @@ header .logo {
 }
 
 header .logo a {
-  background: url("img/logo.svg");
+  background: url("../img/logo.svg");
   width: 32px;
   height: 32px;
   display: block;
@@ -161,7 +160,7 @@ header .logo a {
 }
 
 header .logo a:hover {
-  background: url("img/logo_on.svg");
+  background: url("../img/logo_on.svg");
 }
 
 
@@ -224,9 +223,21 @@ header .sub-menu li a:hover {
   color: #4078c0
 }
 
+#toggle-btn {
+  display: none;
+  background: url("../img/toggle-btn.svg");
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
 /* visual */
 .section--visual {
-  background-image: url(img/bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: cover;
@@ -338,22 +349,22 @@ header .sub-menu li a:hover {
 
 /* tiles */
 
-.section--feature .tiles{
-  border-top:1px solid #e5e5e5;
-  border-bottom:1px solid #e5e5e5;
+.section--feature .tiles {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.section--feature .tiles .inner{
+.section--feature .tiles .inner {
   max-width: 1200px;
 }
 
 
-.section--feature .tiles ul{
+.section--feature .tiles ul {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.section--feature .tiles li{
+.section--feature .tiles li {
   padding: 34px 24px;
   text-align: center;
   line-height: 1.5;
@@ -361,23 +372,23 @@ header .sub-menu li a:hover {
   box-sizing: border-box;
 }
 
-.section--feature .tiles li:last-child{
+.section--feature .tiles li:last-child {
   border-right: none;
 }
 
-.section--feature .tiles li img{
+.section--feature .tiles li img {
   max-width: 100%;
   padding: 14px 10% 24px;
   box-sizing: border-box;
 }
 
-.section--feature .tiles li h3{
+.section--feature .tiles li h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.section--feature .tiles li p{
+.section--feature .tiles li p {
   font-size: 14px;
   color: #767676;
 }
@@ -432,49 +443,52 @@ float를 사용할땐 부모요소에 clearfix를 사용해야된다는 점! 꼭
 
 
 /* where is */
-.section--where-is{
+.section--where-is {}
 
+.section--where-is .inner {
+  padding-top: 80px;
 }
 
-.section--where-is .inner{
-  padding-top:80px;
-}
-
-#map{
-  width:100%;
+#map {
+  width: 100%;
   height: 400px;
   margin-top: 40px;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: none;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
 
 /* pricing card */
-.section--pricing{
-  background:linear-gradient(#f5f5f5,#ffff);
+.section--pricing {
+  background: linear-gradient(#f5f5f5, #ffff);
 
 }
-.section--pricing .inner{
+
+.section--pricing .inner {
   padding: 80px 0;
 }
-.section--pricing .card{
-  display:flex;
+
+.section--pricing .card {
+  display: flex;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
   box-sizing: border-box;
 }
-.section--pricing .card .cell{
+
+.section--pricing .card .cell {
   padding: 24px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.section--pricing .card .cell1 .btn{
+
+.section--pricing .card .cell1 .btn {
   height: 50px;
   font-size: 16px;
 }
-.section--pricing .card .cell2{
+
+.section--pricing .card .cell2 {
   font-size: 22px;
   font-weight: 300;
   line-height: 1.5;
@@ -483,36 +497,35 @@ float를 사용할땐 부모요소에 clearfix를 사용해야된다는 점! 꼭
 }
 
 /* footer */
-footer{
-}
+footer {}
 
-footer .inner{
+footer .inner {
   padding: 50px 0;
   border-top: 1px solid #eee;
 }
 
-footer .site-links{
-  display:flex;
+footer .site-links {
+  display: flex;
 }
 
 
 
-footer .site-links li{
-  font-size:12px;
+footer .site-links li {
+  font-size: 12px;
   margin-right: 10px;
   color: #767676;
 }
 
-footer .site-links li a{
-  color:#4078c0;
+footer .site-links li a {
+  color: #4078c0;
 }
 
-footer .site-links li a:hover{
+footer .site-links li a:hover {
   text-decoration: underline;
 }
 
-footer .logo{
-  position:absolute;
+footer .logo {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -522,93 +535,9 @@ footer .logo{
   height: 24px;
 }
 
-footer .logo:hover svg{
-  fill:#4078c0;
+footer .logo:hover svg {
+  fill: #4078c0;
 }
+
 /* svg는 fill을 통하여 색상을 변화시킬 수 있다. */
 
-/* media  */
-@media (max-width:1024px){
-  header.section .inner{
-    max-width: none;
-    height: auto;
-    padding: 0 20px;
-  }
-
-  header .menu-group, 
-  header .sign-group{
-    float: none;
-  }
-
- 
-  header .menu-group{
-    display:block;
-  }
-
-  header .logo{
-    padding:12px 0;
-  }
-
-  header .main-menu{
-    display:block;
-    margin-bottom: 10px;
-  }
-
-  header .main-menu li{
-    border-top:1px solid #e5e5e5;
-  }
-
-  header .main-menu li a{
-    padding: 16px 0;
-  }
-
-  header .sign-group{
-    display:block;
-    padding: 10px 0 20px;
-  }
-
-  header .btn-group{
-    display: block;
-  }
-
-  header .btn-group .btn{
-    justify-content: center;
-  }
-  header .btn-group .sign-in{
-    margin-right: 0;
-    margin-bottom: 12px;}
-
-  #search-form{
-    margin-top: 12px;
-    margin-right: 0;
-  }
-
-  #search{
-    width: 100%;
-    height: 42px;
-    text-align: center;
-  }
-
-  header .sub-menu{
-    margin-top: 12px;
-    margin-right: 0;
-    justify-content: center;
-  }
-
-
-  header .toggle{
-    display:none;
-  }
-
-
-  #toggle-btn {
-    background: url("img/toggle-btn.svg");
-    width:18px;
-    height: 24px;
-    position:absolute;
-    top: 16px;
-    right: 20px;
-    cursor: pointer;
-    text-indent:-9999px;
-  }
-}
