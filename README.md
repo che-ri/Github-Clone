@@ -1,3 +1,3 @@
 # github-clone
 
-cloning Github with HTML, CSS, and JS.
+Cloning Github with HTML, CSS, and JS.
